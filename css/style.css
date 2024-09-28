@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "TT Hoves", sans-serif;
+
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 120px;
+    margin-top: calc(20px + (90 - 20) * ((100vw - 375px) / (1280 - 375)));
+   
+
+}
+
+.infocard {
+    width: 400px;
+    
+}
+
+
+.infoContainer {
+    display: flex;
+    gap: calc(20px + (51 - 20) * ((100vw - 375px) / (1280 - 375)));
+    flex-wrap: wrap;
+}
+
+.teacherPhoto {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.infocard img {
+    width: 100%;
+}
+
+.infoBox {
+    flex-basis: 300px;
+    flex-grow: 3;
+}
+
+.h4 {
+    font-size: calc(38px + (48 - 38) * ((100vw - 375px) / (1280 - 375)));
+    font-weight: 700;
+    line-height: 120%;
+
+}
+
+.legendSkill {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: calc(30px + (40 - 30) * ((100vw - 375px) / (1280 - 375)));
+    column-gap: calc(10px + (90 - 10) * ((100vw - 375px) / (1280 - 375)));
+    margin-top: calc(40px + (90 - 40) * ((100vw - 375px) / (1280 - 375)));
+
+}
+
+.skill img {
+    width: 36px;
+}
+
+.skill span {
+    display: block;
+    margin-top: 10px;
+    font-size: calc(16px + (21 - 16) * ((100vw - 375px) / (1280 - 375)));
+    line-height: 140%;
+}
+
+
+.diplom {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.diplom img {
+    grid-row: 1/3;
+    max-width: 430px;
+    align-self: center;
+    
+}
+
+.diplom h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.diplom p {
+    margin-top: 20px;
+}
+
+.ptext h2 {
+    margin-bottom: calc(2.2vw + 11.7px);
+
+}
+
+.ptext p {
+    margin-bottom: calc(1.8vw + 13.3px);
+}
+
+.salaryPhoto img {
+    height: calc(23.6vw + 7.32px);
+}
+
+.bonusMain {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bonusPhoto {
+    flex-basis: 579px;
+    flex-grow: 1;
+}
+
+.bonusPhoto img {
+    width: 100%;
+
+}
+
+.bonusinfo {
+    flex-basis: 300px;
+    flex-grow: 4;
+}
+
+
+.bonusinfo p {
+    font-size: 21px;
+    line-height: 140%;
+
+}
+
+.feedbacks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.feedback {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color:#F0F7FD;
+    justify-content: space-between;
+
+}
+
+.feedback p {
+font-size: 21px;
+font-weight: 400;
+line-height: 140%;
+
+}
+
+.feedbackText {
+    width: 295px;
+    height: 484px;
+}
+
+.student {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.student img {
+    border-radius: 50%;
+    padding-right: 12px;
+    
+}
+
+.studentInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 400px) {
+    .diplom {
+        grid-template-columns: 1fr;
+    }
+    .diplom img {
+        grid-row: 2/3;
+        width: 100%;
+    }
+}
