@@ -192,3 +192,35 @@ line-height: 140%;
         width: 100%;
     }
 }
+
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100wv;
+    height: 100wv;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popUp {
+background: #F0F7FD;
+width: calc(326PX + (800 - 326)* ((100vw - 375px) / (1280 - 375)));
+height: 80vh;
+border-radius: 12px;
+
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+display: none;
+}
+
+.form {
+    width: 320px;
+}
